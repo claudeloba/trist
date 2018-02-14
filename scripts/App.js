@@ -100,14 +100,11 @@ render() {
     return (
       <div className="app">
         <div className="ticket">
-
-        <img src="/style/logo.png" className="logo" />
+          <img src="/style/logo.png" className="logo" />
           {this.renderScratchArea()}
           {this.renderInfo()}
-
-
-
           </div>
+          <br />
       </div>
     );
   }
