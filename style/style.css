@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #ececec;
+  font-family: 'Muli', sans-serif;
+}
+
+h1, h2, h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+h2 {
+  background: rgba(200,200,200,.65);
+  text-align: center;
+  padding: 70px 0 70px;
+  border:10px solid #000;
+  border-radius: 15px;
+  font-size:60px;
+  margin:0;
+  cursor: pointer;
+}
+
+  h2.scratch {
+  }
+  
+    h2.scratch:hover {
+      text-decoration: underline;
+      background: rgba(200,200,200,.35);
+    }
+
+.app {
+  margin-top:40px;
+}
+
+.logo {
+  width:200px;
+  margin:0 auto 5px;
+  display:block;
+}
+
+.ticket {
+  background: url(background.png) top left;
+  background-size:cover;
+  width: 360px;
+  max-width: 98vw;
+  padding: 20px;
+  margin:auto;
+  position:relative;
+}
+
+.info {
+  list-style-type: none;
+  margin:30px 0 40px;
+  color: rgba(0,0,0,.5);
+  padding:0;
+}
+
+  .info strong {
+    float: right;
+  }
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+.button-scratch {
+  width: 120px;
+  height: 120px;
+  border: 5px dashed #000;
+  border-radius: 5px;
+  font-size:16px;
+  margin:10px 0;
+  cursor:pointer;
+  background: rgba(175,175,175,.65);
+}
+  .button-scratch:hover {
+    background: rgba(175,175,175,.35);
+  }
