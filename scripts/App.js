@@ -6,10 +6,10 @@ export default class App extends Component {
 
   constructor(props) {
     super(props);
-    var batch = batchHelper.newBatch();
+    this.batch = batchHelper.newBatch();
 
     this.state = {
-      batch: batch,
+      //batch: batch,
       index: 1,
       total: 0,
       currentTicket: 0,
@@ -21,17 +21,16 @@ export default class App extends Component {
   }
 
   scratchTickets = () => {
-    var batch = this.state.batch;
-    var currentTicket = batch.pop();
+    var currentTicket = this.batch.pop();
     var win = currentTicket > this.state.largestWin ? currentTicket : this.state.largestWin;
     var index = this.state.index + 1;
 
-    if (batch.length == 0) {
-      batch = batchHelper.newBatch();
+    if (this.batch.length == 0) {
+      this.batch = batchHelper.newBatch();
     }
 
     this.setState({
-      batch: batch,
+      //batch: batch,
       index: index,
       total: this.state.total + currentTicket - settings.ticketPrice,
       currentTicket: currentTicket,

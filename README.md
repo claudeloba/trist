@@ -1,5 +1,7 @@
 # Plötsligt händer det
 
+En enkel simulation av trisslotter. Byggt utan vinstsyfte eller någon koppling till Svenska Spel AB eller något av deras varumärken.
+
 ### Kör själv
 
 Projektet är baserat på https://www.npmjs.com/package/react-es6-webpack-boilerplate

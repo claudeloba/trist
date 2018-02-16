@@ -7,9 +7,12 @@ const newBatch = () => {
 
   settings.winners.map((winner) => {
     for (var i = 0; i < winner.nrOfTickets; i++) {
-      var index = Math.floor(Math.random() * settings.batchSize);
-
-      while(batch[index]) index = Math.floor(Math.random() * settings.batchSize);
+      var index;
+      
+      do{
+        index = Math.floor(Math.random() * settings.batchSize);
+      }
+      while(batch[index]);
 
       batch[index] = winner.amount;
     }
