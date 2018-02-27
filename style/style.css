@@ -4,6 +4,9 @@
 body {
   background-color: #ececec;
   font-family: 'Muli', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
 }
 
 h1, h2, h3 {
@@ -32,7 +35,13 @@ h2 {
     }
 
 .app {
-  margin-top:40px;
+  margin-top:10px;
+}
+
+@media (min-width:600px) {
+  .app {
+      margin-top:40px;
+  }
 }
 
 .logo {
@@ -82,11 +91,13 @@ button:focus {
   .button-scratch:hover {
     background: rgba(175,175,175,.35);
   }
-
+#root {
+  flex:1 1 100vh;
+}
 .credits {
-  position: absolute;
-  bottom:5px;
-  right:5px;
+  flex:1 0 35px;
+  width:100%;
+  text-align: right;
   color: rgba(0,0,0,.5);
 }
 a {
